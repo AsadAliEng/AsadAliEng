@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img" aria-label="Experience timeline">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#071327"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:800 30px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}
+      .sub{font:500 14px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}
+      .year{font:800 16px 'Segoe UI',Arial,sans-serif;fill:#67e8f9;letter-spacing:.4px}
+      .role{font:800 18px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}
+      .body{font:600 13px 'Segoe UI',Arial,sans-serif;fill:#cbd5e1}
+      .pill{font:700 11px 'Segoe UI',Arial,sans-serif;fill:#a7f3d0;letter-spacing:.6px}
+      .card{fill:#0f172a;stroke:#334155;stroke-width:1.4;rx:18}
+      .dot{filter:url(#glow)}
+      .float{animation:float 4s ease-in-out infinite}
+      .pulse{animation:pulse 2.6s ease-in-out infinite;transform-origin:center}
+      .dash{stroke-dasharray:9 13;animation:dash 14s linear infinite}
+      @keyframes dash{to{stroke-dashoffset:-220}}
+      @keyframes pulse{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    </style>
+  </defs>
+
+  <rect width="1100" height="420" rx="28" fill="url(#bg)"/>
+  <rect x="18" y="18" width="1064" height="384" rx="24" fill="none" stroke="#1e3a8a" stroke-width="1.5" opacity=".9"/>
+  <circle cx="965" cy="80" r="130" fill="#0ea5e9" opacity=".12"/>
+  <circle cx="970" cy="325" r="140" fill="#8b5cf6" opacity=".10"/>
+  <path class="dash" d="M90 100 C260 42, 460 52, 620 92 S880 135, 1010 74" fill="none" stroke="#38bdf8" stroke-width="2" opacity=".45"/>
+
+  <text x="55" y="60" class="title">Experience Timeline</text>
+  <text x="55" y="85" class="sub">AI/ML · Computer Vision · LLM/RAG · Full-Stack AI delivery</text>
+
+  <line x1="105" y1="205" x2="995" y2="205" stroke="url(#line)" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+  <line class="dash" x1="105" y1="205" x2="995" y2="205" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity=".25"/>
+
+  <!-- Cards -->
+  <g class="float" style="animation-delay:0s">
+    <rect class="card" x="58" y="115" width="235" height="88"/>
+    <text x="78" y="145" class="year">2023 - 2025</text>
+    <text x="78" y="170" class="role">AI-Integrated Software</text>
+    <text x="78" y="192" class="body">Python APIs · AI apps · data</text>
+    <circle class="dot pulse" cx="175" cy="205" r="10" fill="#22d3ee"/>
+  </g>
+
+  <g class="float" style="animation-delay:.35s">
+    <rect class="card" x="310" y="225" width="235" height="92"/>
+    <text x="330" y="255" class="year">2024 - 2025</text>
+    <text x="330" y="280" class="role">LLM Evaluation</text>
+    <text x="330" y="302" class="body">model feedback · datasets · quality</text>
+    <circle class="dot pulse" cx="428" cy="205" r="10" fill="#8b5cf6"/>
+  </g>
+
+  <g class="float" style="animation-delay:.7s">
+    <rect class="card" x="562" y="115" width="235" height="88"/>
+    <text x="582" y="145" class="year">2025</text>
+    <text x="582" y="170" class="role">ML / CV Systems</text>
+    <text x="582" y="192" class="body">PyTorch · OpenCV · inference</text>
+    <circle class="dot pulse" cx="680" cy="205" r="10" fill="#10b981"/>
+  </g>
+
+  <g class="float" style="animation-delay:1.05s">
+    <rect class="card" x="814" y="225" width="235" height="92"/>
+    <text x="834" y="255" class="year">CURRENT</text>
+    <text x="834" y="280" class="role">AI Systems Engineer</text>
+    <text x="834" y="302" class="body">production AI · team leadership</text>
+    <circle class="dot pulse" cx="932" cy="205" r="10" fill="#f59e0b"/>
+  </g>
+
+  <g opacity=".92">
+    <rect x="322" y="345" width="455" height="36" rx="18" fill="#020617" stroke="#1e40af"/>
+    <circle cx="350" cy="363" r="4" fill="#22d3ee"/><text x="365" y="367" class="pill">BUILD</text>
+    <circle cx="440" cy="363" r="4" fill="#8b5cf6"/><text x="455" y="367" class="pill">TEST</text>
+    <circle cx="525" cy="363" r="4" fill="#10b981"/><text x="540" y="367" class="pill">TRAIN</text>
+    <circle cx="625" cy="363" r="4" fill="#f59e0b"/><text x="640" y="367" class="pill">SHIP</text>
+  </g>
+</svg>
