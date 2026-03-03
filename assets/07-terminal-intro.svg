@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330" role="img" aria-label="Animated terminal intro">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#071327"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="45%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:800 30px Segoe UI,Arial,sans-serif;fill:#f8fafc;letter-spacing:-.4px}
+      .h{font:700 18px Segoe UI,Arial,sans-serif;fill:#e5e7eb}
+      .sub{font:500 13px Segoe UI,Arial,sans-serif;fill:#94a3b8}
+      .small{font:600 12px Segoe UI,Arial,sans-serif;fill:#cbd5e1}
+      .tiny{font:600 11px JetBrains Mono,Consolas,monospace;fill:#93c5fd}
+      .mono{font:600 15px JetBrains Mono,Consolas,monospace;fill:#e5e7eb}
+      .tag{font:700 12px Segoe UI,Arial,sans-serif;fill:#dbeafe;letter-spacing:.5px}
+    </style>
+  </defs>
+  
+  <rect width="1100" height="330" rx="26" fill="url(#bg)"/>
+  <circle cx="850" cy="70" r="185" fill="url(#orb)"/>
+  <rect x="45" y="45" width="1010" height="240" rx="18" fill="#08111f" stroke="#1e3a5f" stroke-width="1.4"/>
+  <rect x="45" y="45" width="1010" height="44" rx="18" fill="#0f172a"/>
+  <circle cx="75" cy="67" r="7" fill="#ef4444"/>
+  <circle cx="98" cy="67" r="7" fill="#f59e0b"/>
+  <circle cx="121" cy="67" r="7" fill="#22c55e"/>
+  <text x="155" y="72" class="tiny">asad@ai-engineering:~/profile</text>
+  <text x="75" y="122" class="mono">$ whoami</text>
+  <text x="75" y="152" class="small">AI/ML Engineer · Computer Vision Engineer · Full-Stack AI Engineer</text>
+  <text x="75" y="195" class="mono">$ focus --areas</text>
+  <text x="75" y="225" class="small">ML systems · Vision · LLM/RAG · FastAPI · React · MLOps</text>
+  <text x="75" y="268" class="mono">$ build --mode production</text>
+  <rect x="336" y="255" width="11" height="18" fill="#22d3ee"><animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/></rect>
+  <g filter="url(#glow)">
+    <path d="M690 135 C765 75 860 95 920 150 C980 205 1010 260 980 285" fill="none" stroke="url(#cyan)" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 12">
+      <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <circle r="7" fill="#22d3ee">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M690 135 C765 75 860 95 920 150 C980 205 1010 260 980 285"/>
+    </circle>
+  </g>
+
+</svg>
