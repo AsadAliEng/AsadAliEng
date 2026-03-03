@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-label="Engineering capability map">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="48%" stop-color="#071327"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb923c"/><stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:800 31px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}
+      .sub{font:500 14px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}
+      .h{font:800 18px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}
+      .label{font:700 13px 'Segoe UI',Arial,sans-serif;fill:#e2e8f0}
+      .small{font:600 12px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}
+      .chip{font:800 12px 'Segoe UI',Arial,sans-serif;fill:#e5f3ff;letter-spacing:.4px}
+      .card{fill:#0f172a;stroke:#334155;stroke-width:1.25;rx:18}
+      .chipbox{fill:#111827;stroke:#243b55;stroke-width:1;rx:10}
+      .orbit{animation:dash 14s linear infinite;stroke-dasharray:8 12}
+      .pulse{animation:pulse 2.8s ease-in-out infinite;transform-origin:center}
+      .bar1{animation:grow1 3.2s ease-in-out infinite}.bar2{animation:grow2 3.2s ease-in-out infinite}.bar3{animation:grow3 3.2s ease-in-out infinite}
+      @keyframes dash{to{stroke-dashoffset:-220}}
+      @keyframes pulse{0%,100%{opacity:.68;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+      @keyframes grow1{0%,100%{width:250px}50%{width:285px}} @keyframes grow2{0%,100%{width:220px}50%{width:260px}} @keyframes grow3{0%,100%{width:205px}50%{width:245px}}
+    </style>
+  </defs>
+
+  <rect width="1100" height="650" rx="30" fill="url(#bg)"/>
+  <rect x="18" y="18" width="1064" height="614" rx="28" fill="none" stroke="#1e3a8a" stroke-width="1.4"/>
+  <circle cx="975" cy="110" r="145" fill="#0ea5e9" opacity=".12"/>
+  <circle cx="150" cy="560" r="110" fill="#10b981" opacity=".08"/>
+  <path class="orbit" d="M120 95 C320 38, 520 62, 700 94 S910 128, 1020 80" fill="none" stroke="#38bdf8" stroke-width="2" opacity=".45"/>
+
+  <text x="55" y="63" class="title">Engineering Capability Map</text>
+  <text x="55" y="90" class="sub">Focused stack map across AI/ML, computer vision, LLM/RAG, full-stack AI, and delivery.</text>
+
+  <!-- Left: Primary stack -->
+  <rect class="card" x="55" y="125" width="465" height="450"/>
+  <text x="82" y="163" class="h">Primary AI Engineering Stack</text>
+  <text x="82" y="188" class="small">Focused on production AI engineering capabilities</text>
+
+  <text x="82" y="228" class="label">Python</text><rect x="82" y="240" width="360" height="12" rx="6" fill="#1f2937"/><rect class="bar1" x="82" y="240" height="12" rx="6" fill="url(#orange)"/><text x="455" y="230" class="small" fill="#67e8f9">CORE</text>
+  <text x="82" y="272" class="label">PyTorch</text><rect x="82" y="284" width="360" height="12" rx="6" fill="#1f2937"/><rect class="bar2" x="82" y="284" height="12" rx="6" fill="url(#cyan)"/><text x="445" y="274" class="small" fill="#67e8f9">STRONG</text>
+  <text x="82" y="316" class="label">OpenCV</text><rect x="82" y="328" width="360" height="12" rx="6" fill="#1f2937"/><rect class="bar3" x="82" y="328" height="12" rx="6" fill="url(#violet)"/><text x="445" y="318" class="small" fill="#67e8f9">STRONG</text>
+  <text x="82" y="360" class="label">FastAPI</text><rect x="82" y="372" width="360" height="12" rx="6" fill="#1f2937"/><rect x="82" y="372" width="225" height="12" rx="6" fill="#60a5fa"/><text x="430" y="362" class="small" fill="#67e8f9">WORKING</text>
+  <text x="82" y="404" class="label">React / Next.js</text><rect x="82" y="416" width="360" height="12" rx="6" fill="#1f2937"/><rect x="82" y="416" width="220" height="12" rx="6" fill="#38bdf8"/><text x="430" y="406" class="small" fill="#67e8f9">WORKING</text>
+
+  <text x="82" y="463" class="h">AI / Product Tooling</text>
+  <g transform="translate(82 486)">
+    <rect class="chipbox" x="0" y="0" width="88" height="30"/><text class="chip" x="18" y="20">YOLO</text>
+    <rect class="chipbox" x="100" y="0" width="104" height="30"/><text class="chip" x="118" y="20">RAG</text>
+    <rect class="chipbox" x="216" y="0" width="118" height="30"/><text class="chip" x="231" y="20">LangChain</text>
+    <rect class="chipbox" x="342" y="0" width="80" height="30"/><text class="chip" x="353" y="20">Docker</text>
+  </g>
+  <g transform="translate(82 525)">
+    <rect class="chipbox" x="0" y="0" width="122" height="30"/><text class="chip" x="16" y="20">PostgreSQL</text>
+    <rect class="chipbox" x="134" y="0" width="96" height="30"/><text class="chip" x="154" y="20">Redis</text>
+    <rect class="chipbox" x="242" y="0" width="104" height="30"/><text class="chip" x="260" y="20">Streamlit</text>
+  </g>
+
+  <!-- Right: Capability cards -->
+  <rect class="card" x="560" y="125" width="485" height="450"/>
+  <text x="588" y="163" class="h">Applied AI Capability Areas</text>
+  <text x="588" y="188" class="small">Focused profile map for applied AI product engineering</text>
+
+  <g transform="translate(590 220)">
+    <rect x="0" y="0" width="205" height="74" rx="15" fill="#071827" stroke="#22d3ee"/>
+    <text x="18" y="30" class="label">AI / Machine Learning</text><text x="18" y="53" class="small">models · evaluation · inference</text>
+    <rect x="230" y="0" width="205" height="74" rx="15" fill="#121027" stroke="#8b5cf6"/>
+    <text x="248" y="30" class="label">Computer Vision</text><text x="248" y="53" class="small">OpenCV · YOLO · deep learning</text>
+    <rect x="0" y="94" width="205" height="74" rx="15" fill="#1a0d14" stroke="#ef4444"/>
+    <text x="18" y="124" class="label">Generative AI / RAG</text><text x="18" y="147" class="small">LLMs · embeddings · vector search</text>
+    <rect x="230" y="94" width="205" height="74" rx="15" fill="#1c1606" stroke="#f59e0b"/>
+    <text x="248" y="124" class="label">Full-Stack AI</text><text x="248" y="147" class="small">FastAPI · React · Next.js</text>
+    <rect x="0" y="188" width="205" height="74" rx="15" fill="#071a15" stroke="#10b981"/>
+    <text x="18" y="218" class="label">MLOps / Cloud</text><text x="18" y="241" class="small">Docker · K8s · CI/CD · cloud</text>
+    <rect x="230" y="188" width="205" height="74" rx="15" fill="#0b1425" stroke="#60a5fa"/>
+    <text x="248" y="218" class="label">Data / Vector</text><text x="248" y="241" class="small">Postgres · Redis · vector DBs</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle class="pulse" cx="1020" cy="590" r="7" fill="#22d3ee"/>
+    <circle class="pulse" cx="75" cy="595" r="5" fill="#10b981"/>
+  </g>
+</svg>
