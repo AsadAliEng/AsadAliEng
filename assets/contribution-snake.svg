@@ -1,0 +1,39 @@
+<svg width="1100" height="210" viewBox="0 0 1100 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1100" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06111f"/>
+      <stop offset="0.5" stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="snake" x1="80" y1="95" x2="1020" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1100" height="210" rx="22" fill="url(#g)"/>
+  <rect x="18" y="18" width="1064" height="174" rx="18" stroke="#334155" stroke-width="1.5"/>
+  <text x="42" y="58" fill="#e5e7eb" font-size="22" font-family="Inter,Segoe UI,Arial" font-weight="700">Contribution Flow</text>
+  <text x="42" y="86" fill="#94a3b8" font-size="13" font-family="Inter,Segoe UI,Arial">machine learning • vision • LLM/RAG • full-stack AI</text>
+  <g opacity="0.55">
+    <script type="application/ecmascript"><![CDATA[]]></script>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-22 0;0 0" dur="5s" repeatCount="indefinite"/>
+      <path d="M80 132 C180 78 285 164 390 110 C510 48 620 165 742 112 C845 66 940 92 1020 132" stroke="#1e293b" stroke-width="18" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path d="M80 132 C180 78 285 164 390 110 C510 48 620 165 742 112 C845 66 940 92 1020 132" stroke="url(#snake)" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+  <circle r="9" fill="#22d3ee" filter="url(#glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M80 132 C180 78 285 164 390 110 C510 48 620 165 742 112 C845 66 940 92 1020 132"/>
+  </circle>
+  <circle r="7" fill="#10b981" filter="url(#glow)">
+    <animateMotion dur="6s" begin="1.8s" repeatCount="indefinite" path="M80 132 C180 78 285 164 390 110 C510 48 620 165 742 112 C845 66 940 92 1020 132"/>
+  </circle>
+  <g fill="#1e293b">
+    <circle cx="190" cy="90" r="4"/><circle cx="310" cy="150" r="4"/><circle cx="530" cy="58" r="4"/><circle cx="775" cy="118" r="4"/><circle cx="944" cy="92" r="4"/>
+  </g>
+</svg>

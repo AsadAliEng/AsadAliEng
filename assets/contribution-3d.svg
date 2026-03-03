@@ -1,0 +1,30 @@
+<svg width="1100" height="320" viewBox="0 0 1100 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1100" y2="320"><stop stop-color="#020617"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="180"><stop stop-color="#22d3ee"/><stop offset="0.55" stop-color="#6366f1"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1100" height="320" rx="22" fill="url(#bg)"/>
+  <rect x="18" y="18" width="1064" height="284" rx="18" stroke="#334155" stroke-width="1.5"/>
+  <text x="42" y="58" fill="#e5e7eb" font-size="22" font-family="Inter,Segoe UI,Arial" font-weight="700">3D Engineering Activity Map</text>
+  <text x="42" y="86" fill="#94a3b8" font-size="13" font-family="Inter,Segoe UI,Arial">consistent building across ML, vision, LLM/RAG and AI product systems</text>
+  <g transform="translate(170 245) skewX(-28) scale(1 0.72)" stroke="#334155" opacity="0.7">
+    <path d="M0 0H760"/><path d="M0 -45H760"/><path d="M0 -90H760"/><path d="M0 -135H760"/>
+    <path d="M0 0V-155"/><path d="M95 0V-155"/><path d="M190 0V-155"/><path d="M285 0V-155"/><path d="M380 0V-155"/><path d="M475 0V-155"/><path d="M570 0V-155"/><path d="M665 0V-155"/><path d="M760 0V-155"/>
+  </g>
+  <g transform="translate(188 244) skewX(-28) scale(1 0.72)" filter="url(#glow)">
+    <g fill="url(#bar)">
+      <rect x="10" y="-40" width="32" height="40" rx="4"><animate attributeName="height" values="40;68;40" dur="4s" repeatCount="indefinite"/><animate attributeName="y" values="-40;-68;-40" dur="4s" repeatCount="indefinite"/></rect>
+      <rect x="105" y="-76" width="32" height="76" rx="4"><animate attributeName="height" values="76;105;76" dur="4.8s" repeatCount="indefinite"/><animate attributeName="y" values="-76;-105;-76" dur="4.8s" repeatCount="indefinite"/></rect>
+      <rect x="200" y="-52" width="32" height="52" rx="4"><animate attributeName="height" values="52;88;52" dur="5.2s" repeatCount="indefinite"/><animate attributeName="y" values="-52;-88;-52" dur="5.2s" repeatCount="indefinite"/></rect>
+      <rect x="295" y="-112" width="32" height="112" rx="4"><animate attributeName="height" values="112;142;112" dur="5s" repeatCount="indefinite"/><animate attributeName="y" values="-112;-142;-112" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="390" y="-64" width="32" height="64" rx="4"><animate attributeName="height" values="64;96;64" dur="4.5s" repeatCount="indefinite"/><animate attributeName="y" values="-64;-96;-64" dur="4.5s" repeatCount="indefinite"/></rect>
+      <rect x="485" y="-132" width="32" height="132" rx="4"><animate attributeName="height" values="132;160;132" dur="5.7s" repeatCount="indefinite"/><animate attributeName="y" values="-132;-160;-132" dur="5.7s" repeatCount="indefinite"/></rect>
+      <rect x="580" y="-90" width="32" height="90" rx="4"><animate attributeName="height" values="90;124;90" dur="4.9s" repeatCount="indefinite"/><animate attributeName="y" values="-90;-124;-90" dur="4.9s" repeatCount="indefinite"/></rect>
+      <rect x="675" y="-118" width="32" height="118" rx="4"><animate attributeName="height" values="118;150;118" dur="5.4s" repeatCount="indefinite"/><animate attributeName="y" values="-118;-150;-118" dur="5.4s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+  <g font-family="Inter,Segoe UI,Arial" font-size="13" fill="#94a3b8">
+    <text x="88" y="278">ML</text><text x="270" y="278">Vision</text><text x="448" y="278">LLM</text><text x="620" y="278">API</text><text x="808" y="278">MLOps</text>
+  </g>
+</svg>
