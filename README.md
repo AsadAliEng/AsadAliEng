@@ -207,18 +207,17 @@ I focus on practical AI engineering: taking models and intelligent workflows fro
 
 ---
 
-## 🐍 Contribution Flow
+## 📊 Live Engineering Signal
 
 <div align="center">
-  <img src="./assets/contribution-snake.svg" alt="Contribution flow animation" width="96%" />
-</div>
-
----
-
-## 🧊 Contribution Graph
-
-<div align="center">
-  <img src="./assets/contribution-3d.svg" alt="Contribution graph animation" width="96%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AsadAliEng&theme=github_dark" alt="Asad Ali GitHub profile details and contribution activity" width="96%" />
+  <br />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AsadAliEng&theme=github_dark" alt="Top languages by repository" width="47%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AsadAliEng&theme=github_dark" alt="Top languages by commit" width="47%" />
+  <br />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AsadAliEng&theme=github_dark" alt="GitHub contribution statistics" width="47%" />
+  <br />
+  <img src="https://streak-stats.demolab.com?user=AsadAliEng&theme=dark" alt="GitHub contribution streak" width="62%" />
 </div>
 
 ---
@@ -244,8 +243,8 @@ I focus on practical AI engineering: taking models and intelligent workflows fro
 <div align="center">
 
 <img src="https://img.shields.io/badge/LinkedIn-Asad%20Ali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-<a href="https://github.com/AsadAli-Blockchain" target="_blank"><img src="https://img.shields.io/badge/GitHub-Asad%20Ali-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="mailto:asadali.cryptoeng@gmail.com"><img src="https://img.shields.io/badge/Email-asadali.cryptoeng%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://github.com/AsadAliEng" target="_blank"><img src="https://img.shields.io/badge/GitHub-AsadAliEng-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile: AsadAliEng" /></a>
+<a href="mailto:asadalieng1107@gmail.com"><img src="https://img.shields.io/badge/Email-asadalieng1107%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email: asadalieng1107@gmail.com" /></a>
 
 </div>
 
